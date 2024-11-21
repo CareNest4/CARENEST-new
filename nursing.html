@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nursing Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google font -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif; /* Set font for the body */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light background color */
+        }
+
+        header {
+            background-color: #4CAF50; /* Green header */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .description {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .description h2 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: #4CAF50; /* Green color */
+            color: white;
+            transition: all 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        button:hover {
+            background-color: #ffffff; /* Slightly darker green */
+            transform: scale(1.1); /* Enlarge button */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            color: #28a745;
+        }
+
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(184, 188, 185, 0.6); /* Green outline */
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .service-card h3 {
+            font-size: 22px;
+            color: #4CAF50;
+            margin-top: 15px;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px); /* Slight hover effect */
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #11a900;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media screen and (max-width: 1024px) {
+            /* For tablets */
+            .services {
+                flex-direction: column; /* Stack service cards vertically */
+                align-items: center;
+                gap: 20px;
+            }
+
+            .service-card {
+                width: 80%; /* Adjust card width */
+            }
+
+            header h1 {
+                font-size: 28px; /* Smaller font size for header */
+            }
+
+            .description h2 {
+                font-size: 24px; /* Adjust description heading size */
+            }
+
+            button {
+                font-size: 14px; /* Adjust button font size */
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            /* For mobile devices */
+            .services {
+                flex-direction: column; /* Stack the service cards vertically */
+                gap: 15px;
+            }
+
+            .service-card {
+                width: 100%; /* Full width for service cards */
+                padding: 15px; /* Adjust padding */
+            }
+
+            header h1 {
+                font-size: 24px; /* Smaller font size for header */
+            }
+
+            .description h2 {
+                font-size: 20px; /* Smaller description font size */
+            }
+
+            button {
+                font-size: 12px; /* Smaller button font */
+                padding: 12px 25px; /* Adjust button padding */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            /* For very small screens (e.g., phones in portrait mode) */
+            header h1 {
+                font-size: 20px; /* Even smaller header font size */
+            }
+
+            .description h2 {
+                font-size: 18px; /* Further reduce description font size */
+            }
+
+            button {
+                font-size: 10px; /* Very small button font */
+                padding: 10px 20px; /* Smaller button padding */
+            }
+
+            .service-card h3 {
+                font-size: 18px; /* Adjust the size of the service card headings */
+            }
+
+            .service-card p {
+                font-size: 14px; /* Smaller text in service cards */
+            }
+        }
+    </style>
+    <script>
+        function openWhatsApp() {
+            window.open("https://wa.me/923401503368", "_blank");
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>CareNest Nursing Services</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section class="description">
+            <h2>Comprehensive Home Nursing Care for Your Loved Ones</h2>
+            <p>At CareNest, we offer a variety of nursing services to ensure the well-being and comfort of your family. Our experienced team of professionals is available 24/7 to provide compassionate care in the comfort of your home.</p>
+            <br>
+            <button class="whatsapp-button" onclick="openWhatsApp()">Get the Service</button>
+        </section>
+
+        <section class="services">
+            <!-- Service Card 1 -->
+            <div class="service-card">
+                <img src="nursing team.jpg" alt="Nursing Care">
+                <h3>Skilled Nursing Care</h3>
+                <p>Our skilled nurses are trained to provide medical care, including administering medications, wound care, and post-operative care.</p>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="service-card">
+                <img src="post care.jpg" alt="Post-Surgery Care">
+                <h3>Post-Surgery Care</h3>
+                <p>Our team ensures that you recover quickly and comfortably at home with professional post-surgery care, including monitoring and rehabilitation.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 CareNest Nursing Services. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Physiotherapy and Speech Therapy Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .intro h2 {
+            font-size: 32px;
+            color: #333;
+        }
+
+        .intro p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        /* Service Section */
+        .service-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            margin: 15px 0;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .service-card h3 {
+            font-size: 22px;
+            color: #28a745;
+            margin-top: 15px;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Call to Action Section */
+        .cta-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta-button {
+            padding: 15px 40px;
+            font-size: 18px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #218838;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #28a745;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 60px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .service-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-card {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Home Physiotherapy and Speech Therapy Services</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section class="intro">
+            <h2>Professional Home Care for Physiotherapy & Speech Therapy</h2>
+            <p>At our clinic, we provide top-notch home physiotherapy and speech therapy services. Our team of experts is dedicated to bringing therapy to your door, helping you heal and recover in the comfort of your home.</p>
+        </section>
+
+        <!-- Service Section -->
+        <section class="service-section">
+            <!-- Physiotherapy Service Card -->
+            <div class="service-card">
+                <img src="physical-therapy.png" alt="Physiotherapy Service">
+                <h3>Physiotherapy</h3>
+                <p>Our skilled physiotherapists provide personalized rehabilitation sessions to treat injuries, manage pain, and improve mobility, all from the comfort of your home.</p>
+            </div>
+
+            <!-- Speed Therapy Service Card -->
+            <div class="service-card">
+                <img src="pain.png"Chronic Pain Management">
+                <h3>Chronic Pain Management</h3>
+                <p>We specialize in treating chronic pain conditions like arthritis, back pain, and sciatica through targeted exercises and therapy.</p>
+            </div>
+
+            <!-- Speech Therapy Service Card -->
+            <div class="service-card">
+                <img src="speech-therapy.png" alt="Speech Therapy">
+                <h3>Speech Therapy</h3>
+                <p>We offer speech therapy to help with speech disorders, language development, and communication challenges. Our experts assist patients of all ages to improve their speech and language skills.</p>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <button class="cta-button"  onclick="window.location.href='https://wa.me/923401503368'">Book a Session</button>
+        </section>
+    </div>
+
+    <!-- Contact Form -->
+   
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Physiotherapy & Speech Therapy Services. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

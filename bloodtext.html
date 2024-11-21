@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Blood Test Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #00bb2c;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        /* Main Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* Intro Section */
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro h2 {
+            font-size: 32px;
+            color: #00bb2c;
+        }
+
+        .intro p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Service Cards Section */
+        .service-section {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .service-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .service-card h3 {
+            font-size: 24px;
+            color: #00bb2c;
+            margin-top: 15px;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        /* Button Section */
+        .cta-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cta-button {
+            padding: 15px 40px;
+            font-size: 18px;
+            background-color: #00bb2c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #00bb2c;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #00bb2c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .service-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-card {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            .cta-button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Home Blood Test Services</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Intro Section -->
+        <section class="intro">
+            <h2>Convenient Blood Tests at Home</h2>
+            <p>Our home blood test services bring the laboratory to your doorstep. Get your blood sample collected by certified professionals in the comfort of your home. We offer a wide range of blood tests with accurate results delivered to you quickly and securely.</p>
+        </section>
+
+        <!-- Service Cards Section -->
+        <section class="service-section">
+            <!-- Blood Sample Collection Card -->
+            <div class="service-card">
+                <img src="medicine.png" alt="Blood Sample Collection">
+                <h3>Blood Sample Collection</h3>
+                <p>Our phlebotomists come to your home to collect your blood samples at your convenience, following strict hygiene protocols.</p>
+            </div>
+
+            <!-- Blood Test Analysis Card -->
+            <div class="service-card">
+                <img src="blood-pressure.png" alt="Blood Test Analysis">
+                <h3>Blood Test Analysis</h3>
+                <p>We partner with certified laboratories to analyze your blood samples with high precision, ensuring reliable results for all tests.</p>
+            </div>
+
+            <!-- Results Delivery Card -->
+            <div class="service-card">
+                <img src="logistics-delivery.png" alt="Results Delivery">
+                <h3>Results Delivery</h3>
+                <p>Once your test results are ready, we securely deliver them to your email or our online portal for easy access and privacy.</p>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <button class="cta-button"  onclick="window.location.href='https://wa.me/923401503368'">Book Your Blood Test Now</button>
+        </section>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Home Blood Test Services. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
